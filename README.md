@@ -2,11 +2,12 @@
 ARK Cheat Detection Script
 ===========================
 
-A batch script developed to detect well-known cheats and hacks related to ARK: Survival Evolved on Windows systems. This tool is designed to scan for cheat files, processes, network activities, and suspicious registry entries commonly associated with ARK cheats.
+A batch script developed to detect well-known cheats and hacks related to ARK: Survival Evolved on Windows systems. This tool is designed to scan for cheat files, processes, network activities, and suspicious registry entries commonly associated with ARK cheats, including those used for duping exploits via RDP (Remote Desktop Protocol).
 
 Features
 --------
-- Detects Well-Known ARK Cheats: Searches for cheat files, processes, and registry entries related to popular ARK hacks like "arkinjector", "proofcore", "ring-1", and others.
+- Detects Well-Known ARK Cheats: Searches for cheat files, processes, and registry entries related to popular ARK hacks like "unleashed", "headshot", "addicted", and others, including RDP-related exploits.
+- Duping Detection: Includes detection of cheats or exploits that utilize RDP services for duping in ARK.
 - Comprehensive Scan: Scans critical system directories, running processes, network connections, registry, and even WinRAR’s recent files for evidence of cheats.
 - PowerShell Enhanced Checks: Utilizes PowerShell commands for deeper process and file analysis.
 - Windows Defender Scan: Checks Windows Defender's protection history for cheat-related alerts.
@@ -34,19 +35,19 @@ Script Overview
 ---------------
 - Log Initialization: The script initializes a log file with headers containing system details such as PC name and current date/time.
   
-- File Search: Scans directories like `C:\Program Files`, `AppData`, and `Downloads` for known ARK cheat files including `arkinjector`, `HSLoader.exe`, and others.
+- File Search: Scans directories like `C:\Program Files`, `AppData`, and `Downloads` for known ARK cheat files including `arkinjector`, `HSLoader.exe`, and others, including RDP-related exploits.
 
-- Process Search: Monitors running processes for ARK cheat-related activity.
+- Process Search: Monitors running processes for ARK cheat-related activity, including those associated with Remote Desktop Protocol (RDP) services for duping.
 
-- Network Connections: Checks for cheat-related terms in current network connections using `netstat`.
+- Network Connections: Checks for cheat-related terms in current network connections using `netstat`, especially those related to RDP usage.
 
-- Registry Check: Searches specific registry keys for cheat entries, commonly used by ARK cheats to persist on systems.
+- Registry Check: Searches specific registry keys for cheat entries, commonly used by ARK cheats and duping exploits via RDP.
 
 - WinRAR History: Scans WinRAR's recent files for ARK cheats stored in archives.
 
-- PowerShell Checks: Executes PowerShell commands to perform deeper scans of processes and file systems for ARK cheats.
+- PowerShell Checks: Executes PowerShell commands to perform deeper scans of processes and file systems for ARK cheats, including RDP-based tools for duping.
 
-- Windows Defender Scan: Checks Windows Defender logs for cheat-related activities.
+- Windows Defender Scan: Checks Windows Defender logs for cheat-related activities, including RDP services.
 
 Well-Known ARK Cheats Detected
 ------------------------------
@@ -54,16 +55,17 @@ The script is designed to detect a range of well-known ARK cheats, including but
 - arkinjector
 - proofcore
 - ring-1
-- HSLoader.exe
-- HSLoaderUpdater.exe
-- UWPHelper.exe
+- headshot
 - primal
 - unleashed
+- addicted
+- **RDP-related terms** such as `RDPCheck.exe`, `rdpwup.exe`, and other Remote Desktop Protocol exploits that is used for duping.
+and more.
 
 Customization
 -------------
 - Search Paths: You can modify the `searchPaths` variable in the script to scan specific directories on your system.
-- Search Terms: Add or remove terms in the `searchTerms` list to detect specific ARK cheats.
+- Search Terms: Add or remove terms in the `searchTerms` list to detect specific ARK cheats or RDP-based duping exploits.
 
 Example Log Output
 ------------------
@@ -83,6 +85,7 @@ PC Name: My-PC
 [ALERT] Cheat detected: arkinjector found in C:\Users\User\AppData\Local\Temp\
 [INFO] Checking for suspicious processes...
 [ALERT] Cheat process detected: HSLoader.exe
+[ALERT] Cheat process detected: RDPCheck.exe
 [INFO] Checking network connections...
 ...
 [INFO] Scan complete. Check C:\Users\User\Desktop\cheat_scan.log for details.
