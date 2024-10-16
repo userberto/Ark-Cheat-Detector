@@ -24,10 +24,10 @@ How to Use
 1. Download the Script: Clone or download the script from this repository.
 
    ```bash
-   git clone https://github.com/ThunderDoesDev/Ark-Cheat-Detector/arkcheatdetector.git
+   git clone https://github.com/ThunderDoesDev/Ark-Cheat-Detector/cheatdetector.git
    ```
 
-2. Run the Script: Double-click the `arkcheatdetector.bat` file or run it from a command prompt with administrative privileges.
+2. Run the Script: Double-click the `cheatdetector.bat` file or run it from a command prompt with administrative privileges.
 
 3. Check Results: The scan results will be saved in a log file on your desktop called `cheat_scan.log`.
 
@@ -35,7 +35,7 @@ Script Overview
 
 - **Log Initialization**: The script initializes a log file with headers containing system details such as PC name and current date/time.
   
-- **File Search**: Scans directories like `C:\Program Files`, `AppData`, and `Downloads` for known ARK cheat files including `arkinjector`, `HSLoader.exe`, and others, including RDP-related exploits.
+- **File Search**: Scans directories like `C:\Program Files`, `AppData`, `Rubbish Bin`, and `Downloads` for known ARK cheat files including `arkinjector`, `HSLoader.exe`, and others, including RDP-related exploits.
 
 - **Process Search**: Monitors running processes for ARK cheat-related activity, including those associated with Remote Desktop Protocol (RDP) services for duping.
 
