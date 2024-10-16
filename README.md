@@ -1,5 +1,5 @@
 
-ARK Cheat Detection Script
+ARK Cheat Detection
 ===========================
 
 A batch script developed to detect well-known cheats and hacks related to ARK: Survival Evolved on Windows systems. This tool is designed to scan for cheat files, processes, network activities, and suspicious registry entries commonly associated with ARK cheats, including those used for duping exploits via RDP (Remote Desktop Protocol).
