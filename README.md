@@ -94,7 +94,7 @@ PC Name: My-PC
 
 License
 
-This project is licensed under the APACHE License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
 
