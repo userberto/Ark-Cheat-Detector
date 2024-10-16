@@ -25,6 +25,7 @@ How to Use
 
    ```bash
    git clone https://github.com/ThunderDoesDev/Ark-Cheat-Detector/cheatdetector.git
+   cd cheatdetector
    ```
 
 2. Run the Script: Double-click the `cheatdetector.bat` file or run it from a command prompt with administrative privileges.
