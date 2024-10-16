@@ -24,10 +24,10 @@ How to Use
 1. Download the Script: Clone or download the script from this repository.
 
    ```bash
-   git clone https://github.com/your-username/ark-cheat-detection-script.git
+   git clone https://github.com/ThunderDoesDev/Ark-Cheat-Detector/arkcheatdetector.git
    ```
 
-2. Run the Script: Double-click the `ark-cheat-detection.bat` file or run it from a command prompt with administrative privileges.
+2. Run the Script: Double-click the `arkcheatdetector.bat` file or run it from a command prompt with administrative privileges.
 
 3. Check Results: The scan results will be saved in a log file on your desktop called `cheat_scan.log`.
 
